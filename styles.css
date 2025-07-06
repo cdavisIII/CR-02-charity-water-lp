@@ -1,3 +1,4 @@
+/* Base styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -5,13 +6,18 @@ body {
   color: #1a1a1a;
 }
 
-.navbar {
+/* Header and Nav */
+header {
   background-color: #fddcc4;
+  border-bottom: 3px solid #000;
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  border-bottom: 3px solid #000;
+  flex-wrap: wrap;
 }
 
 .nav-left a {
@@ -41,6 +47,7 @@ body {
   cursor: pointer;
 }
 
+/* Main content area */
 .main-container {
   display: flex;
   flex-wrap: wrap;
@@ -48,12 +55,14 @@ body {
   color: #000;
 }
 
+/* Image section */
 .image-section img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
+/* Text/message section */
 .message-section {
   flex: 1;
   padding: 20px;
@@ -85,6 +94,7 @@ body {
   font-weight: bold;
 }
 
+/* Sidebar */
 .sidebar {
   background-color: #fddcc4;
   padding: 20px;
