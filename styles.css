@@ -130,9 +130,12 @@ header {
   justify-content: space-between;
 }
 
-.quote-box, .faq-box {
-  border: 2px solid #000;
-  padding: 15px;
-  margin-bottom: 20px;
-  background-color: #fddcc4;
+.quote-box,
+.faq-box {
+  background-color: #ffcf2f; /* Same yellow as Donate Online */
+  border-radius: 20px;       /* Rounded corners for a friendly look */
+  padding: 18px;             /* Space inside the box */
+  margin-bottom: 18px;       /* Space below each box */
+  color: #1a1a1a;            /* Dark text for readability */
+  font-weight: bold;         /* Make text stand out */
 }
