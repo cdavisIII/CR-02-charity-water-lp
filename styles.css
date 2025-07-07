@@ -39,12 +39,14 @@ header {
 }
 
 .donate-button button {
-  background-color: #ffcf2f;
+  background-color: #ffcf2f; /* Bright yellow */
   border: none;
-  padding: 10px 15px;
+  padding: 20px 40px; /* Increased padding for a bigger button */
+  font-size: 1.5em;   /* Larger text */
   font-weight: bold;
   border-radius: 25px;
   cursor: pointer;
+  margin-top: 10px;   /* Adds a little space above the button */
 }
 
 /* Main content area */
