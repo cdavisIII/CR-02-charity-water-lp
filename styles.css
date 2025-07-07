@@ -20,11 +20,18 @@ header {
   flex-wrap: wrap;
 }
 
+/* Make nav links look like big buttons with yellow background */
 .nav-left a {
   margin-right: 20px;
   text-decoration: none;
   font-weight: bold;
   color: #1a1a1a;
+  background-color: #ffcf2f; /* Same yellow as Donate Online */
+  padding: 15px 30px;        /* Bigger size for the buttons */
+  border-radius: 25px;       /* Rounded corners */
+  font-size: 1.2em;          /* Make text bigger */
+  display: inline-block;     /* So padding and background work nicely */
+  margin-top: 10px;          /* Space above the buttons */
 }
 
 .brand {
@@ -82,18 +89,34 @@ header {
   margin-bottom: 30px;
 }
 
+/* Steps container: center the bubbles */
 .steps {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  flex-wrap: wrap;
+  /* This centers the steps horizontally */
+  display: flex;              /* Use flexbox for easy centering */
+  flex-direction: column;     /* Stack bubbles from top to bottom */
+  align-items: center;        /* Center bubbles horizontally */
+  margin: 20px 0;
 }
 
+/* Each step is a small word bubble */
 .step {
-  background-color: #fddcc4;
-  padding: 15px 25px;
-  border-radius: 40px;
+  background-color: #fddcc4;  /* Light orange bubble */
+  padding: 15px 25px;         /* Controls bubble size */
+  border-radius: 40px;        /* Makes bubbles round */
   font-weight: bold;
+  display: inline-block;      /* Bubble only as wide as the word */
+  margin-bottom: 10px;        /* Space between bubbles */
+  text-align: center;
+}
+
+/* Add a little more space between each word bubble */
+.steps .step {
+  margin-bottom: 18px; /* Adds more space between the bubbles */
+}
+
+/* Optional: Remove extra space after the last bubble */
+.steps .step:last-child {
+  margin-bottom: 0;
 }
 
 /* Sidebar */
